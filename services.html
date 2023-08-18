@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .header {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding:  0;
+        }
+
+        .services-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 5px;
+        }
+
+        .service-card {
+            width:300px;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.295);
+        }
+
+        .service-image {
+            width: 150px; /* Adjust the width to increase/decrease the picture size */
+            margin-bottom: 30px;
+        }
+
+        .service-title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .service-description {
+            font-size: 16px;
+            color: #666;
+        }
+
+       
+
+        .awesome-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            position: relative;
+            animation: moveButton 2s ease-in-out infinite alternate;
+        }
+
+        .awesome-button:hover {
+            background-color: #333;
+        }
+
+        @keyframes moveButton {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(20px);
+            }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .navigation {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .navigation h4 {
+            margin: 0;
+            font-size: 24px;
+            animation: moveText 5s infinite linear;
+        }
+
+        .navigation .icon {
+            font-size: 32px;
+            margin-right: 10px;
+            animation: rotateIcon 5s infinite linear;
+        }
+
+        @keyframes moveText {
+            0%, 100% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes rotateIcon {
+            0%, 100% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <nav>
+       <h4>Common Problems</h4>
+    </nav>
+
+    <div class="services-container">
+        <div class="service-card">
+            <img src="images/op.png" alt="Operating System Installation" class="service-image">
+            <h2 class="service-title">Operating System Installation and Upgrades</h2>
+            <p class="service-description">Upgrade or install the latest Windows version for optimal performance, security, and software compatibility.</p>
+        </div>
+
+        <div class="service-card">
+          
+            <img src="images/campability.png" alt="Software Compatibility Issues" class="service-image">
+            <h2 class="service-title">Software Compatibility Issues</h2>
+            <p class="service-description">Resolve crashes, errors, and performance slowdowns caused by incompatible software or drivers.</p>
+        </div>
+        
+        <div class="service-card">
+            <img src="images/How_to_upgrade_RAM_memory_in_your_PC-Hero.png" alt="Driver Installation and Updates" class="service-image">
+            <h2 class="service-title">Driver Installation and Updates</h2>
+            <p class="service-description">Installing and updating drivers for hardware components (e.g., graphics cards, network adapters) to ensure proper functionality and performance.</p>
+        </div>
+        
+
+        <div class="service-card">
+            <img src="images/bluescreen.jpg" alt="Blue Screen of Death (BSOD) Fixes" class="service-image">
+            <h2 class="service-title">Blue Screen of Death (BSOD) Fixes</h2>
+            <p class="service-description">Troubleshooting and resolving system crashes, blue screen errors, and other critical errors that may prevent the computer from functioning properly.</p>
+        </div>
+
+        
+        <div class="service-card">
+            <img src="images/Slow-computer-feature-image.jpg" alt="Slow Performance" class="service-image">
+            <h2 class="service-title">Slow Performance</h2>
+            <p class="service-description">Identifying and addressing factors that contribute to slow system performance, such as excessive background processes, insufficient memory, or storage issues.</p>
+        </div>
+
+        
+        <div class="service-card">
+            <img src="images/software.png" alt="Software Installation and Troubleshooting" class="service-image">
+            <h2 class="service-title">Software Installation and Troubleshooting</h2>
+            <p class="service-description">Assisting with the installation and configuration of software applications, as well as resolving software-related errors or conflicts.</p>
+        </div>
+    </div>
+
+    <!-- Add more sections, such as testimonials or contact information... -->
+
+       <center>
+    <H4>Contact me on the tell problem button!, your message will be replied ASAP</H4>
+
+
+    <button class="awesome-button" onclick="redirectToWhatsApp()">Tell the problem</button></center> 
+ 
+
+
+<script>
+function redirectToWhatsApp() {
+    // Replace '1234567890' with the recipient's phone number, including the country code
+    var phoneNumber = '+767762069';
+
+    // Create the WhatsApp URL with the phone number and a predefined message (optional)
+    var whatsappUrl = 'https://wa.me/' + phoneNumber + '?text=Hello%20from%20my%20website!';
+
+    // Open the WhatsApp URL in a new tab/window
+    window.open(whatsappUrl, '_blank');
+}
+</script>
+
+<footer class="footer">
+    <p>&copy; 2023 Your Company Name. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+</footer>
+
+</body>
+</html>

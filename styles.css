@@ -1,0 +1,256 @@
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  background-image: linear-gradient(45deg, #007bff, #00bfff);
+  color: #fff;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 100px;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header-description {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.header-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #007bff;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.header-btn:hover {
+  background-color: #2a515e;
+  transform: scale(1.05);
+  text-decoration: hsl(from color h s l);
+}
+
+/* Animation for Header */
+.header-content {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+  /* Your existing CSS styles for the website */
+
+/* Services Section Styles */
+.services-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.services-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+/* Header Styles */
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  background-image: linear-gradient(45deg, #007bff, #00bfff);
+  color: #fff;
+  text-align: center;
+}
+
+.header-content {
+  max-width: 600px;
+}
+
+.header-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header-description {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.header-btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #007bff;
+  font-size: 18px;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.header-btn:hover {
+  background-color: #2a515e;
+  transform: scale(1.05);
+}
+
+/* Animation for Header */
+.header-content {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #007bff;
+  padding: 10px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0d3d70;
+}
+
+/* Services Section Styles */
+.services-section {
+  text-align: center;
+  padding: 50px;
+}
+
+.services-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+/* Header Styles */
+.header {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #007bff;
+  background-image: linear-gradient(45deg, #007bff, #00bfff);
+  color: #fff;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header h1 span {
+  color: #2a515e; /* Adjust the color for the span */
+}
+
+/* Animation for Header */
+.header h1 {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.location-sticker {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.location-icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #007bff;
+}
